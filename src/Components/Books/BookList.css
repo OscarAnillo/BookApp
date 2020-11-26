@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.col {
+    margin: 1em auto;
+    padding: 1em 1em;
+    width: 80%;
+    background: #eee;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: red;
+    text-shadow: 1px 1px 1px #111;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 900px){
+    .container {
+        width: 80%;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: 26%;
+        opacity: .8;
+        transition: .3s;
+    }
+    .col:hover {
+        opacity: 1;
+        box-shadow: 5px 10px 15px #111;
+    }
+}
